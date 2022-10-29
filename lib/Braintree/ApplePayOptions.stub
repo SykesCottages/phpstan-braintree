@@ -1,0 +1,16 @@
+<?php
+
+namespace Braintree;
+
+class ApplePayOptions extends Base
+{
+    /**
+     * @return ApplePayOptions
+     */
+    public static function factory($attributes)
+    {
+        $instance = new self();
+        $instance->_initialize($attributes);
+        return $instance;
+    }
+}

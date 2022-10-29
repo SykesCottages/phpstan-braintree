@@ -1,0 +1,73 @@
+<?php
+
+namespace Braintree;
+
+use InvalidArgumentException;
+
+class ClientTokenGateway
+{
+    /**
+     * @var Gateway
+     */
+    private $_gateway;
+
+    /**
+     * @var Configuration
+     */
+    private $_config;
+
+    /**
+     * @var Http
+     */
+    private $_http;
+
+    /**
+     *
+     * @param Gateway $gateway
+     */
+    public function __construct($gateway)
+    {
+    }
+
+    /**
+     * @ignore
+     * @param var $subPath
+     * @param array $params
+     * @return string
+     */
+    public function _doGenerate($subPath, $params)
+    {
+    }
+
+    /**
+     * @param array $params
+     * @throws InvalidArgumentException
+     */
+    public function conditionallyVerifyKeys($params)
+    {
+    }
+
+    /**
+     * @return mixed[]
+     */
+    public function generateWithCustomerIdSignature()
+    {
+    }
+
+    /**
+     * @return string[]
+     */
+    public function generateWithoutCustomerIdSignature()
+    {
+    }
+
+    /**
+     * @ignore
+     * @param array $response gateway response values
+     * @return string client token
+     * @throws InvalidArgumentException | HTTP status code exception
+     */
+    private function _verifyGatewayResponse($response)
+    {
+    }
+}

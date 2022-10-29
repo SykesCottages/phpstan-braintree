@@ -1,0 +1,16 @@
+<?php
+
+namespace Braintree;
+
+/**
+ * Braintree AchMandate module
+ *
+ * @package   Braintree
+ *
+ * @property-read string $text
+ * @property-read string $acceptedAt
+ */
+class AchMandate extends Base
+{
+
+}

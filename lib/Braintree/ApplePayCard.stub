@@ -1,0 +1,63 @@
+<?php
+
+namespace Braintree;
+
+/**
+ * @property-read string $bin
+ * @property-read string $cardType
+ * @property-read \DateTime $createdAt
+ * @property-read string $customerId
+ * @property-read boolean $default
+ * @property-read string $expirationDate
+ * @property-read string $expirationMonth
+ * @property-read string $expirationYear
+ * @property-read boolean $expired
+ * @property-read string $imageUrl
+ * @property-read string $last4
+ * @property-read string $token
+ * @property-read string $prepaid
+ * @property-read string $healthcare
+ * @property-read string $debit
+ * @property-read string $durbinRegulated
+ * @property-read string $commercial
+ * @property-read string $payroll
+ * @property-read string $issuingBank
+ * @property-read string $countryOfIssuance
+ * @property-read string $productId
+ * @property-read string $paymentInstrumentName
+ * @property-read string $sourceDescription
+ * @property-read \Braintree\Subscription[] $subscriptions
+ * @property-read \DateTime $updatedAt
+ */
+class ApplePayCard extends Base
+{
+    /**
+     * @return boolean
+     */
+    public function isDefault()
+    {
+    }
+
+    /**
+     * @return boolean
+     */
+    public function isExpired()
+    {
+    }
+
+    /**
+     * @return ApplePayCard
+     */
+    public static function factory($attributes)
+    {
+    }
+
+    /**
+     * @todo firm up the array below
+     * @param array $applePayCardAttribs array of Apple Pay card properties
+     * @return void
+     */
+    protected function _initialize($applePayCardAttribs)
+    {
+    }
+}

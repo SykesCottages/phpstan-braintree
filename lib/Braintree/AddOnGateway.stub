@@ -1,0 +1,40 @@
+<?php
+
+namespace Braintree;
+
+class AddOnGateway
+{
+    /**
+     *
+     * @var Gateway
+     */
+    private $_gateway;
+
+    /**
+     *
+     * @var Configuration
+     */
+    private $_config;
+
+    /**
+     *
+     * @var Http
+     */
+    private $_http;
+
+    /**
+     *
+     * @param Gateway $gateway
+     */
+    public function __construct($gateway)
+    {
+    }
+
+    /**
+     *
+     * @return AddOn[]
+     */
+    public function all()
+    {
+    }
+}

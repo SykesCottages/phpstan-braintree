@@ -1,0 +1,24 @@
+<?php
+
+namespace Braintree;
+
+/**
+ * @property-read string $amount
+ * @property-read boolean $success
+ * @property-read \DateTime $timestamp
+ */
+
+class AuthorizationAdjustment extends Base
+{
+    /**
+     * @return AuthorizationAdjustment
+     */
+    public static function factory($attributes)
+    {
+    }
+
+    public function __toString()
+    {
+        return __CLASS__ . '[' . Util::attributesToString($this->_attributes) . ']';
+    }
+}

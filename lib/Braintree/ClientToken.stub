@@ -1,0 +1,37 @@
+<?php
+
+namespace Braintree;
+
+class ClientToken
+{
+    /**
+     *
+     * @param array $params
+     * @return string
+     */
+    public static function generate($params = [])
+    {
+    }
+
+    /**
+     * @param type $params
+     * @throws InvalidArgumentException
+     */
+    public static function conditionallyVerifyKeys($params)
+    {
+    }
+
+    /**
+     * @return string client token retrieved from server
+     */
+    public static function generateWithCustomerIdSignature()
+    {
+    }
+
+    /**
+     * @return string client token retrieved from server
+     */
+    public static function generateWithoutCustomerIdSignature()
+    {
+    }
+}

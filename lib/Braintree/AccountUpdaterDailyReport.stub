@@ -1,0 +1,15 @@
+<?php
+
+namespace Braintree;
+
+/**
+ * Creates an instance of AccountUpdaterDailyReport
+ *
+ * @package    Braintree
+ *
+ * @property-read string $reportUrl
+ * @property-read date   $reportDate
+ */
+class AccountUpdaterDailyReport extends Base
+{
+}

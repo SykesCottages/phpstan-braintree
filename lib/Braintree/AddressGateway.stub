@@ -1,0 +1,152 @@
+<?php
+
+namespace Braintree;
+
+use InvalidArgumentException;
+
+class AddressGateway
+{
+    /**
+     * @var Gateway
+     */
+    private $_gateway;
+
+    /**
+     * @var Configuration
+     */
+    private $_config;
+
+    /**
+     * @var Http
+     */
+    private $_http;
+
+    /**
+     * @param Gateway $gateway
+     */
+    public function __construct($gateway)
+    {
+    }
+
+
+    /**
+     * @access public
+     * @param  array  $attribs
+     * @return Result\Successful|Result\Error
+     */
+    public function create($attribs)
+    {
+    }
+
+    /**
+     * @access public
+     * @param  array $attribs
+     * @return self
+     * @throws Exception\ValidationError
+     */
+    public function createNoValidate($attribs)
+    {
+    }
+
+    /**
+     * @param mixed $customerOrId
+     * @param string $addressId
+     */
+    public function delete($customerOrId = null, $addressId = null)
+    {
+    }
+    /**
+     * @access public
+     * @param mixed $customerOrId
+     * @param string $addressId
+     * @return Address
+     * @throws Exception\NotFound
+     */
+    public function find($customerOrId, $addressId)
+    {
+    }
+
+    /**
+     * @access public
+     * @param array $attributes
+     * @param mixed $customerOrId (only used in call)
+     * @param string $addressId (only used in call)
+     * @return Result\Successful|Result\Error
+     */
+    public function update($customerOrId, $addressId, $attributes)
+    {
+    }
+
+    /**
+     * @access public
+     * @param array $transactionAttribs
+     * @param string $customerId
+     * @return Transaction
+     * @throws Exception\ValidationsFailed
+     * @see Address::update()
+     */
+    public function updateNoValidate($customerOrId, $addressId, $attributes)
+    {
+    }
+
+    /**
+     * @return array gateway create request format
+     */
+    public static function createSignature()
+    {
+    }
+
+    /**
+     * @return array gateway update request format
+     */
+    public static function updateSignature()
+    {
+    }
+
+    /**
+     * @ignore
+     * @param string $id address id
+     * @throws InvalidArgumentException
+     */
+    private function _validateId($id = null)
+    {
+    }
+
+    /**
+     * @ignore
+     * @param string $id customer id
+     * @throws InvalidArgumentException
+     */
+    private function _validateCustomerId($id = null)
+    {
+    }
+
+    /**
+     * @ignore
+     * @param mixed $customerOrId
+     * @return string customerId
+     */
+    private function _determineCustomerId($customerOrId)
+    {
+    }
+
+    /**
+     * @ignore
+     * @param string $subPath
+     * @param array $params
+     * @return Result\Successful|Result\Error
+     */
+    private function _doCreate($subPath, $params)
+    {
+    }
+
+    /**
+     * @ignore
+     * @param array $response gateway response values
+     * @return Result\Successful|Result\Error
+     * @throws Exception\Unexpected
+     */
+    private function _verifyGatewayResponse($response)
+    {
+    }
+}

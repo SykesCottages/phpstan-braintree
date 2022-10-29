@@ -1,0 +1,33 @@
+<?php
+
+namespace Braintree;
+
+class ApplePayGateway
+{
+    /**
+     * @param string $domain
+     * @return Result\Error|Result\Successful|void
+     */
+    public function registerDomain($domain)
+    {
+    }
+
+    /**
+     * @param string $domain
+     * @return Result\Successful
+     */
+    public function unregisterDomain($domain)
+    {
+        $path = $this->_config->merchantPath() . '/processing/apple_pay/unregister_domain';
+        $this->_http->delete($path, ['url' => $domain]);
+        return new Result\Successful();
+    }
+
+    /**
+     * @return Result\Error|Result\Successful
+     * @throws Exception\Unexpected
+     */
+    public function registeredDomains()
+    {
+    }
+}
