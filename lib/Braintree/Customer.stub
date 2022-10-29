@@ -1,0 +1,192 @@
+<?php
+
+namespace Braintree;
+
+/**
+ * @property-read \Braintree\Address[] $addresses
+ * @property-read \Braintree\GooglePayCard[] $googlePayCards
+ * @property-read \Braintree\ApplePayCard[] $applePayCards
+ * @property-read string $company
+ * @property-read \DateTime $createdAt
+ * @property-read \Braintree\CreditCard[] $creditCards
+ * @property-read array  $customFields custom fields passed with the request
+ * @property-read string $email
+ * @property-read string $fax
+ * @property-read string $firstName
+ * @property-read string $graphQLId
+ * @property-read string $id
+ * @property-read string $lastName
+ * @property-read \Braintree\PaymentMethod[] $paymentMethods
+ * @property-read \Braintree\PayPalAccount[] $paypalAccounts
+ * @property-read string $phone
+ * @property-read \Braintree\SamsungPayCard[] $samsungPayCards
+ * @property-read \DateTime $updatedAt
+ * @property-read \Braintree\UsBankAccount[] $usBankAccounts
+ * @property-read \Braintree\VenmoAccount[] $venmoAccounts
+ * @property-read \Braintree\VisaCheckoutCard[] $visaCheckoutCards
+ * @property-read string $website
+ */
+class Customer extends Base
+{
+    /**
+     * @return Customer[]
+     */
+    public static function all()
+    {
+    }
+
+    /**
+     * @param array $query
+     * @param int[] $ids
+     * @return Customer|Customer[]
+     */
+    public static function fetch($query, $ids)
+    {
+    }
+
+    /**
+     * @param array $attribs
+     * @return Result\Successful|Result\Error
+     */
+    public static function create($attribs = [])
+    {
+    }
+
+    /**
+     * @param array $attribs
+     * @return Customer
+     */
+    public static function createNoValidate($attribs = [])
+    {
+    }
+
+    /**
+     * @throws Exception\NotFound
+     * @param string $id customer id
+     * @return Customer
+     */
+    public static function find($id, $associationFilterId = null)
+    {
+    }
+
+    /**
+     * @param int $customerId
+     * @param array $transactionAttribs
+     * @return Result\Successful|Result\Error
+     */
+    public static function credit($customerId, $transactionAttribs)
+    {
+    }
+
+    /**
+     * @throws Exception\ValidationError
+     * @param type $customerId
+     * @param type $transactionAttribs
+     * @return Transaction
+     */
+    public static function creditNoValidate($customerId, $transactionAttribs)
+    {
+    }
+
+    /**
+     * @throws Exception on invalid id or non-200 http response code
+     * @param int $customerId
+     * @return Result\Successful
+     */
+    public static function delete($customerId)
+    {
+    }
+
+    /**
+     * @param int $customerId
+     * @param array $transactionAttribs
+     * @return Transaction
+     */
+    public static function sale($customerId, $transactionAttribs)
+    {
+    }
+
+    /**
+     * @param int $customerId
+     * @param array $transactionAttribs
+     * @return Transaction
+     */
+    public static function saleNoValidate($customerId, $transactionAttribs)
+    {
+    }
+
+    /**
+     * @throws InvalidArgumentException
+     * @param array $query
+     * @return ResourceCollection
+     */
+    public static function search($query)
+    {
+    }
+
+    /**
+     * @throws Exception\Unexpected
+     * @param int $customerId
+     * @param array $attributes
+     * @return Result\Successful|Result\Error
+     */
+    public static function update($customerId, $attributes)
+    {
+        return Configuration::gateway()->customer()->update($customerId, $attributes);
+    }
+
+    /**
+     * @throws Exception\Unexpected
+     * @param int $customerId
+     * @param array $attributes
+     * @return CustomerGateway
+     */
+    public static function updateNoValidate($customerId, $attributes)
+    {
+    }
+
+    /**
+     * @param array $customerAttribs array of customer data
+     */
+    protected function _initialize($customerAttribs)
+    {
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+    }
+
+    /**
+     * @param object $otherCust customer to compare against
+     * @return boolean
+     */
+    public function isEqual($otherCust)
+    {
+    }
+
+    /**
+     * @return CreditCard|PayPalAccount
+     */
+    public function defaultPaymentMethod()
+    {
+    }
+
+    public static function _defaultPaymentMethodFilter($paymentMethod)
+    {
+    }
+
+
+    /**
+     * @param array $attributes
+     * @return Customer
+     */
+    public static function factory($attributes)
+    {
+        $instance = new Customer();
+        $instance->_initialize($attributes);
+        return $instance;
+    }
+}

@@ -1,0 +1,94 @@
+<?php
+
+namespace Braintree;
+
+use Braintree\Exception\NotFound;
+use Braintree\Result\Successful;
+use InvalidArgumentException;
+use PhpParser\Error;
+
+class DisputeGateway
+{
+    /**
+     * @param Gateway $gateway
+     */
+    public function __construct($gateway)
+    {
+    }
+
+    /**
+     * @param string $id
+     * @throws NotFound
+     * @return  Successful|Result\Error
+     */
+    public function accept($id)
+    {
+    }
+
+    /**
+     * @param string $disputeId
+     * @param string $documentIdOrRequest
+     * @throws InvalidArgumentException
+     * @throws NotFound
+     * @return  Successful|Result\Error
+     */
+    public function addFileEvidence($disputeId, $documentIdOrRequest)
+    {
+    }
+
+    /**
+     * @param string $id
+     * @param string $content
+     * @throws NotFound
+     * @throws InvalidArgumentException
+     * @return  Successful|Result\Error
+     */
+    public function addTextEvidence($id, $contentOrRequest)
+    {
+    }
+
+    /**
+     * @param string $id
+     * @throws NotFound
+     * @return  Successful|Result\Error
+     */
+    public function finalize($id)
+    {
+    }
+
+    /**
+     * @param string $id
+     * @throws NotFound
+     * @return  Successful|Result\Error
+     */
+    public function find($id)
+    {
+    }
+
+    /**
+     * @param string $disputeId
+     * @param string $evidenceId
+     * @throws NotFound
+     * @return  Successful|Result\Error
+     */
+    public function removeEvidence($disputeId, $evidenceId)
+    {
+    }
+
+    /**
+     * @param array $query
+     * @return PaginatedCollection
+     */
+    public function search($query)
+    {
+    }
+
+    /**
+     * @param array $query
+     * @param string $page
+     * @return PaginatedResult
+     */
+    public function fetchDisputes($query, $page)
+    {
+    }
+}

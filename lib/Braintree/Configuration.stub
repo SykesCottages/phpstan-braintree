@@ -1,0 +1,151 @@
+<?php
+
+namespace Braintree;
+
+use Braintree\Exception\SSLCaFileNotFound;
+
+class Configuration
+{
+    /**
+     * @param integer $value If provided, sets the read timeout
+     * @return integer The read timeout used for connecting to Braintree
+     */
+    public static function timeout($value = null)
+    {
+    }
+
+    /**
+     * @param integer $value If provided, sets the SSL version
+     * @return integer The SSL version used for connecting to Braintree
+     */
+    public static function sslVersion($value = null)
+    {
+    }
+
+    /**
+     * @param string $value If provided, sets the proxy host
+     * @return string The proxy host used for connecting to Braintree
+     */
+    public static function proxyHost($value = null)
+    {
+    }
+
+    /**
+     * @param string $value If provided, sets the port of the proxy
+     * @return string The port of the proxy used for connecting to Braintree
+     */
+    public static function proxyPort($value = null)
+    {
+    }
+
+    /**
+     * @param string $value If provided, sets the proxy type
+     * @return string The proxy type used for connecting to Braintree
+     */
+    public static function proxyType($value = null)
+    {
+    }
+
+    /**
+     * @param bool $value If true, will send an Accept-Encoding header with a gzip value.
+     *  If false, will not send an Accept-Encoding header with a gzip value.
+     * @return bool true if an Accept-Encoding header with a gzip value will be sent, false if not
+     */
+    public static function acceptGzipEncoding($value = null)
+    {
+    }
+
+    /**
+     * @return string braintree gateway URL
+     */
+    public function baseUrl()
+    {
+    }
+
+    /**
+     * @return string Braintree GraphQL URL
+     */
+    public function graphQLBaseUrl()
+    {
+    }
+
+    /**
+     * @return string merchant path uri
+     */
+    public function merchantPath()
+    {
+    }
+
+    /**
+     * @return string filepath
+     * @throws SSLCaFileNotFound
+     */
+    public function caFile()
+    {
+    }
+
+    /**
+     * @return int portnumber
+     */
+    public function portNumber()
+    {
+    }
+
+    /**
+     * @return int graphql portnumber
+     */
+    public function graphQLPortNumber()
+    {
+    }
+
+    /**
+     * @return bool true if a proxy is configured properly, false if not
+     */
+    public function isUsingProxy()
+    {
+    }
+
+    /**
+     * @return bool true if both proxyUser and proxyPassword are present
+     */
+    public function isAuthenticatedProxy()
+    {
+    }
+
+    /**
+     * @return string http || https
+     */
+    public function protocol()
+    {
+    }
+
+    /**
+     * @return string server domain name
+     */
+    public function serverName()
+    {
+    }
+
+    /**
+     * @return string graphql domain name
+     */
+    public function graphQLServerName()
+    {
+    }
+
+    /**
+     * @return boolean
+     */
+    public function sslOn()
+    {
+    }
+
+    /**
+     * @param string $message
+     */
+    public function logMessage($message)
+    {
+        error_log('[Braintree] ' . $message);
+    }
+}
+Configuration::reset();

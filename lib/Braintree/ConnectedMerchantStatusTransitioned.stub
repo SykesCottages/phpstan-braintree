@@ -1,0 +1,12 @@
+<?php
+
+namespace Braintree;
+
+/**
+ * @property-read string $merchantPublicId
+ * @property-read string $status
+ * @property-read string $oauthApplicationClientId
+ */
+class ConnectedMerchantStatusTransitioned extends Base
+{
+}

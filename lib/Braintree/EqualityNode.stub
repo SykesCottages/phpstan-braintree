@@ -1,0 +1,13 @@
+<?php
+
+namespace Braintree;
+
+class EqualityNode extends IsNode
+{
+    /**
+     * @return $this
+     */
+    public function isNot($value)
+    {
+    }
+}

@@ -1,0 +1,18 @@
+<?php
+
+namespace Braintree;
+
+/**
+ * @property-read string $disbursementDate
+ * @property-read boolean $fundsHeld
+ * @property-read string $settlementAmount
+ * @property-read string $settlementCurrencyExchangeRate
+ * @property-read string $settlementCurrencyIsoCode
+ * @property-read string $success
+ */
+class DisbursementDetails extends Instance
+{
+    public function isValid()
+    {
+    }
+}
