@@ -1,0 +1,29 @@
+<?php
+
+namespace Braintree;
+
+/**
+ * @property-read string $merchantId
+ * @property-read string $merchantName
+ * @property-read string $paymentMethodNonce
+ */
+class FacilitatedDetails extends Base
+{
+    /**
+     * @return FacilitatedDetails
+     */
+    public static function factory($attributes)
+    {
+    }
+
+    protected function _initialize($attributes)
+    {
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+    }
+}

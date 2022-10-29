@@ -1,0 +1,185 @@
+<?php
+
+namespace Braintree;
+
+use Braintree\Exception\Unexpected;
+use Braintree\Exception\ValidationsFailed;
+use Braintree\Result\Error;
+use Braintree\Result\Successful;
+use InvalidArgumentException;
+
+class CreditCardGateway
+{
+
+    /**
+     * @param array $attribs
+     * @return CreditCard
+     * @throws Exception\ValidationError
+     */
+    public function createNoValidate($attribs)
+    {
+    }
+    /**
+     * @return ResourceCollection
+     */
+    public function expired()
+    {
+    }
+
+    public function fetchExpired($ids)
+    {
+    }
+    /**
+     * @return ResourceCollection
+     */
+    public function expiringBetween($startDate, $endDate)
+    {
+    }
+
+    public function fetchExpiring($startDate, $endDate, $ids)
+    {
+    }
+
+    /**
+     * @param string $token credit card unique id
+     * @return CreditCard
+     * @throws Exception\NotFound
+     */
+    public function find($token)
+    {
+    }
+
+    /**
+     * @param string $nonce payment method nonce
+     * @return CreditCard
+     * @throws Exception\NotFound
+     */
+    public function fromNonce($nonce)
+    {
+    }
+
+    /**
+     * @param string $token
+     * @param array $transactionAttribs
+     * @return Successful|Error
+     */
+    public function credit($token, $transactionAttribs)
+    {
+    }
+
+    /**
+     * @param string $token
+     * @param array $transactionAttribs
+     * @return Transaction
+     * @throws ValidationsFailed
+     */
+    public function creditNoValidate($token, $transactionAttribs)
+    {
+    }
+
+    /**
+     * @param string $token
+     * @param array $transactionAttribs
+     * @return Result\Successful|Result\Error
+     * @see Transaction::sale()
+     */
+    public function sale($token, $transactionAttribs)
+    {
+    }
+
+    /**
+     * @param array $transactionAttribs
+     * @param string $token
+     * @return Transaction
+     * @throws Exception\ValidationsFailed
+     * @see Transaction::sale()
+     */
+    public function saleNoValidate($token, $transactionAttribs)
+    {
+    }
+
+    /**
+     * @param string $token (optional)
+     * @param array $attributes
+     * @return Result\Successful|Result\Error
+     */
+    public function update($token, $attributes)
+    {
+    }
+
+    /**
+     * @param array $attributes
+     * @param string $token
+     * @return CreditCard
+     * @throws Exception\ValidationsFailed
+     */
+    public function updateNoValidate($token, $attributes)
+    {
+    }
+
+    public function delete($token)
+    {
+    }
+
+    private static function baseOptions()
+    {
+    }
+
+    private static function baseSignature($options)
+    {
+    }
+
+    public static function billingAddressSignature()
+    {
+    }
+
+    public static function createSignature()
+    {
+    }
+
+    public static function threeDSecurePassThruSignature()
+    {
+    }
+
+    public static function updateSignature()
+    {
+    }
+
+    /**
+     * @param string $subPath
+     * @param array $params
+     * @return mixed
+     */
+    public function _doCreate($subPath, $params)
+    {
+    }
+
+    /**
+     * @param string $identifier
+     * @param Optional $string $identifierType type of identifier supplied, default "token"
+     * @throws InvalidArgumentException
+     */
+    private function _validateId($identifier = null, $identifierType = "token")
+    {
+    }
+
+    /**
+     * @param string $httpVerb
+     * @param string $subPath
+     * @param array $params
+     * @return mixed
+     * @throws Unexpected
+     */
+    private function _doUpdate($httpVerb, $subPath, $params)
+    {
+    }
+
+    /**
+     * @param array $response gateway response values
+     * @return Result\Successful|Result\Error
+     * @throws Exception\Unexpected
+     */
+    private function _verifyGatewayResponse($response)
+    {
+    }
+}

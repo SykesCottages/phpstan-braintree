@@ -1,0 +1,106 @@
+<?php
+
+namespace Braintree;
+
+/**
+ * @property-read string $amount
+ * @property-read \DateTime $createdAt
+ * @property-read string $currencyIsoCode
+ * @property-read string $disbursementDate
+ * @property-read \Braintree\Dispute\EvidenceDetails $evidence
+ * @property-read string $graphQLId
+ * @property-read string $id
+ * @property-read string $kind
+ * @property-read string $merchantAccountId
+ * @property-read string $originalDisputeId
+ * @property-read string $processorComments
+ * @property-read string $reason
+ * @property-read string $reasonCode
+ * @property-read string $reasonDescription
+ * @property-read \DateTime $receivedDate
+ * @property-read string $referenceNumber
+ * @property-read \DateTime $replyByDate
+ * @property-read string $status
+ * @property-read string $chargebackProtectionLevel
+ * @property-read \Braintree\Dispute\PayPalMessageDetails[] $paypalMessages
+ * @property-read \Braintree\Dispute\StatusHistoryDetails[] $statusHistory
+ * @property-read \Braintree\Dispute\TransactionDetails $transaction
+ * @property-read \Braintree\Dispute\TransactionDetails $transactionDetails
+ * @property-read \DateTime $updatedAt
+ */
+class Dispute extends Base
+{
+    protected function _initialize($disputeAttribs)
+    {
+    }
+
+    public static function factory($attributes)
+    {
+    }
+
+    /**
+     * @param string $id
+     */
+    public static function accept($id)
+    {
+    }
+
+    /**
+     * @param string $disputeId
+     * @param string $documentIdOrRequest
+     */
+    public static function addFileEvidence($disputeId, $documentIdOrRequest)
+    {
+    }
+
+    /**
+     * @param string $id
+     * @param string|mixed $contentOrRequest If a string, $contentOrRequest is the text-based content
+     *  for the dispute evidence.
+     * Alternatively, the second argument can also be an array containing:
+     *  string $content The text-based content for the dispute evidence, and
+     *  string $category The category for this piece of evidence
+     *  Note: (optional) string $tag parameter is deprecated, use $category instead.
+     *
+     *  Example: https://developers.braintreepayments.com/reference/request/dispute/add-text-evidence/php#submitting-categorized-evidence
+     */
+    public static function addTextEvidence($id, $contentOrRequest)
+    {
+    }
+
+    /**
+     * @param string $id
+     */
+    public static function finalize($id)
+    {
+    }
+
+    /**
+     * @param string $id
+     */
+    public static function find($id)
+    {
+    }
+
+    /**
+     * @param string $disputeId
+     * @param string $evidenceId
+     */
+    public static function removeEvidence($disputeId, $evidenceId)
+    {
+    }
+
+    /**
+     * Search for Disputes, given a DisputeSearch query
+     *
+     * @param DisputeSearch $query
+     */
+    public static function search($query)
+    {
+    }
+
+    /** @return array */
+    public static function allChargebackProtectionLevelTypes()
+    {
+    }
+}

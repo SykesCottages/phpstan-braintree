@@ -1,0 +1,12 @@
+<?php
+
+namespace Braintree;
+
+/**
+ * @property-read string $merchantPublicId
+ * @property-read string $action
+ * @property-read string $oauthApplicationClientId
+ */
+class ConnectedMerchantPayPalStatusChanged extends Base
+{
+}

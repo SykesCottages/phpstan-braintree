@@ -1,0 +1,33 @@
+<?php
+
+namespace Braintree;
+
+use InvalidArgumentException;
+
+/**
+ * @property-read string $contentType
+ * @property-read \DateTime $expiresAt
+ * @property-read string $id
+ * @property-read string $kind
+ * @property-read string $name
+ * @property-read int $size
+ */
+class DocumentUpload extends Base
+{
+    /* DocumentUpload Kind */
+    const EVIDENCE_DOCUMENT = "evidence_document";
+
+    /**
+     * @throws InvalidArgumentException if the params are not expected
+     */
+    public static function create($params)
+    {
+    }
+
+    /**
+     * @return DocumentUpload
+     */
+    public static function factory($attributes)
+    {
+    }
+}
