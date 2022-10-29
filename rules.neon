@@ -1,7 +1,7 @@
 parameters:
     stubFiles:
-        - /lib/Braintree/AccountUpdaterDailyReport.stub
-        - Braintree/AuthorizationAdjustment.stub
+        - lib/Braintree/AccountUpdaterDailyReport.stub
+        - lib/Braintree/AuthorizationAdjustment.stub
         - lib/Braintree/Address.stub
         - lib/Braintree/AchMandate.stub
         - lib/Braintree/ClientTokenGateway.stub
