@@ -13,3 +13,4 @@ parameters:
         - lib/Braintree/BinData.stub
         - lib/Braintree/ClientToken.stub
         - lib/Braintree/AddOn.stub
+        - lib/Braintree/CreditCard.stub
