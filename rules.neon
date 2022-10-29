@@ -1,0 +1,15 @@
+parameters:
+    stubFiles:
+        - /lib/Braintree/AccountUpdaterDailyReport.stub
+        - Braintree/AuthorizationAdjustment.stub
+        - lib/Braintree/Address.stub
+        - lib/Braintree/AchMandate.stub
+        - lib/Braintree/ClientTokenGateway.stub
+        - lib/Braintree/AddOnGateway.stub
+        - lib/Braintree/Collection.stub
+        - lib/Braintree/ApplePayOptions.stub
+        - lib/Braintree/AddressGateway.stub
+        - lib/Braintree/ApplePayGateway.stub
+        - lib/Braintree/BinData.stub
+        - lib/Braintree/ClientToken.stub
+        - lib/Braintree/AddOn.stub

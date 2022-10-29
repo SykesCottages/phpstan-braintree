@@ -1,0 +1,24 @@
+{
+  "name": "sykescottages/phpstan-braintree",
+  "type": "phpstan-extension",
+  "description": "Braintree extensions for PHPStan",
+  "license": [
+    "MIT"
+  ],
+  "require": {
+    "braintree/braintree_php": ">6.4.1",
+    "phpstan/extension-installer": "^1.0"
+  },
+  "conflict": {
+    "braintree/braintree_php": "<=6.4.1"
+  },
+  "extra": {
+    "phpstan": {
+      "includes": [
+        "rules.neon"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
