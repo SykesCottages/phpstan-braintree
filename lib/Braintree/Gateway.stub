@@ -1,0 +1,198 @@
+<?php
+
+namespace Braintree;
+
+class Gateway
+{
+    /**
+     * @var Configuration
+     */
+    public $config;
+
+    /**
+     * @var GraphQLClient
+     */
+    public $graphQLClient;
+
+    /**
+     * @return AddOnGateway
+     */
+    public function addOn()
+    {
+    }
+
+    /**
+     * @return AddressGateway
+     */
+    public function address()
+    {
+    }
+
+    /**
+     * @return ApplePayGateway
+     */
+    public function applePay()
+    {
+    }
+
+    /**
+     * @return ClientTokenGateway
+     */
+    public function clientToken()
+    {
+    }
+
+    /**
+     * @return CreditCardGateway
+     */
+    public function creditCard()
+    {
+    }
+
+    /**
+     * @return CreditCardVerificationGateway
+     */
+    public function creditCardVerification()
+    {
+    }
+
+    /**
+     * @return CustomerGateway
+     */
+    public function customer()
+    {
+    }
+
+    /**
+     * @return DiscountGateway
+     */
+    public function discount()
+    {
+    }
+
+    /**
+     * @return DisputeGateway
+     */
+    public function dispute()
+    {
+    }
+
+    /**
+     * @return DocumentUploadGateway
+     */
+    public function documentUpload()
+    {
+    }
+
+    /**
+     * @return MerchantGateway
+     */
+    public function merchant()
+    {
+    }
+
+    /**
+     * @return MerchantAccountGateway
+     */
+    public function merchantAccount()
+    {
+    }
+
+    /**
+     * @return OAuthGateway
+     */
+    public function oauth()
+    {
+    }
+
+    /**
+     * @return PaymentMethodGateway
+     */
+    public function paymentMethod()
+    {
+    }
+
+    /**
+     * @return PaymentMethodNonceGateway
+     */
+    public function paymentMethodNonce()
+    {
+    }
+
+    /**
+     * @return PayPalAccountGateway
+     */
+    public function payPalAccount()
+    {
+    }
+
+    /**
+     * @return PlanGateway
+     */
+    public function plan()
+    {
+    }
+
+    /**
+     * @return SettlementBatchSummaryGateway
+     */
+    public function settlementBatchSummary()
+    {
+    }
+
+    /**
+     * @return SubscriptionGateway
+     */
+    public function subscription()
+    {
+    }
+
+    /**
+     * @return TestingGateway
+     */
+    public function testing()
+    {
+    }
+
+    /**
+     * @return TransactionGateway
+     */
+    public function transaction()
+    {
+    }
+
+    /**
+     * @return TransactionLineItemGateway
+     */
+    public function transactionLineItem()
+    {
+    }
+
+    /**
+     * @return UsBankAccountGateway
+     */
+    public function usBankAccount()
+    {
+    }
+
+    /**
+     * @return UsBankAccountVerificationGateway
+     */
+    public function usBankAccountVerification()
+    {
+    }
+
+    /**
+     * @return WebhookNotificationGateway
+     */
+    public function webhookNotification()
+    {
+    }
+
+    /**
+     * @return WebhookTestingGateway
+     */
+    public function webhookTesting()
+    {
+    }
+}
