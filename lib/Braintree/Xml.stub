@@ -1,0 +1,22 @@
+<?php
+
+namespace Braintree;
+
+class Xml
+{
+
+    /**
+     * @return array
+     */
+    public static function buildArrayFromXml($xml)
+    {
+    }
+
+    /**
+     * @param array $array
+     * @return string
+     */
+    public static function buildXmlFromArray($array)
+    {
+    }
+}

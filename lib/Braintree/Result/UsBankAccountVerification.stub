@@ -1,0 +1,51 @@
+<?php
+
+namespace Braintree\Result;
+
+use Braintree\RiskData;
+use Braintree\Util;
+use Braintree\UsBankAccount;
+use Braintree\Base;
+
+/**
+ * @property-read string $id
+ * @property-read string $status
+ * @property-read string $verificationMethod
+ * @property-read \DateTime $verificationDeterminedAt
+ * @property-read Braintree\UsBankAccount $usBankAccount
+ *
+ */
+class UsBankAccountVerification extends Base
+{
+
+    /**
+     * @access protected
+     * @param array $aAttribs array of properties to set - single level
+     * @return void
+     */
+    private function _initializeFromArray($attributes)
+    {
+    }
+
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+    }
+
+    /**
+     * @return array
+     */
+    public static function allStatuses()
+    {
+    }
+
+    /**
+     * @return array
+     */
+    public static function allVerificationMethods()
+    {
+    }
+}

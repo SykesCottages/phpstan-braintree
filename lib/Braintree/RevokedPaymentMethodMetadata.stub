@@ -1,0 +1,25 @@
+<?php
+
+namespace Braintree;
+
+/**
+ * @property-read string $customerId
+ * @property-read string $token
+ * @property-read string $revokedPaymentMethod
+ */
+class RevokedPaymentMethodMetadata extends Base
+{
+    /**
+     * @return RevokedPaymentMethodMetadata
+     */
+    public static function factory($attributes)
+    {
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+    }
+}

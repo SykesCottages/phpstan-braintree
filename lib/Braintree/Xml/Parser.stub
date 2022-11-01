@@ -1,0 +1,47 @@
+<?php
+
+namespace Braintree\Xml;
+
+use DateTime;
+use DateTimeZone;
+use DOMDocument;
+use DOMElement;
+use DOMNode;
+use DOMText;
+use Braintree\Util;
+
+class Parser
+{
+    /**
+     * @param string $xml
+     * @return array
+     */
+    public static function arrayFromXml($xml)
+    {
+    }
+
+    /**
+     * @param DOMNode @node
+     * @return mixed
+     */
+    private static function _nodeToArray($node)
+    {
+    }
+
+    /**
+     * @param DOMNode $node
+     * @return mixed
+     */
+    private static function _nodeToValue($node)
+    {
+    }
+
+
+    /**
+     * @param string $timestamp
+     * @return DateTime
+     */
+    private static function _timestampToUTC($timestamp)
+    {
+    }
+}

@@ -1,0 +1,154 @@
+<?php
+
+namespace Braintree;
+
+
+class Util
+{
+    /**
+     * @param array  $attribArray   attributes from a search response
+     * @param string $attributeName indicates which element of the passed array to extract
+     * @return array array of $attributeName objects, or a single element array
+     */
+    public static function extractAttributeAsArray(&$attribArray, $attributeName)
+    {
+    }
+    
+    /**
+     * @param string $statusCode HTTP status code to throw exception from
+     * @param null|string $message
+     * @throws Exception multiple types depending on the error
+     * @return void
+     */
+    public static function throwStatusCodeException($statusCode, $message = null)
+    {
+    }
+
+    /**
+     * @param array $response complete graphql response
+     * @throws Exception multiple types depending on the error
+     * @return void
+     */
+    public static function throwGraphQLResponseException($response)
+    {
+    }
+
+    /**
+     * @param string $className
+     * @param object $resultObj
+     * @return object returns the passed object if successful
+     * @throws Exception\ValidationsFailed
+     */
+    public static function returnObjectOrThrowException($className, $resultObj)
+    {
+    }
+
+    /**
+     * @param string $name ClassName
+     * @return camelCased classname minus  header
+     */
+    public static function cleanClassName($name)
+    {
+    }
+
+    /**
+     * @param string $name className
+     * @return string ClassName
+     */
+    public static function buildClassName($name)
+    {
+    }
+
+    /**
+     * @param string $string
+     * @param null|string $delimiter
+     * @return string modified string
+     */
+    public static function delimiterToCamelCase($string, $delimiter = '[\-\_]')
+    {
+    }
+
+    /**
+     * @param string $string
+     * @return string modified string
+     */
+    public static function delimiterToUnderscore($string)
+    {
+    }
+
+
+    /**
+     * @param string $string
+     * @param null|string $delimiter
+     * @return string modified string
+     */
+    public static function camelCaseToDelimiter($string, $delimiter = '-')
+    {
+    }
+
+    public static function delimiterToCamelCaseArray($array, $delimiter = '[\-\_]')
+    {
+    }
+
+    public static function camelCaseToDelimiterArray($array, $delimiter = '-')
+    {
+    }
+
+    public static function delimiterToUnderscoreArray($array)
+    {
+    }
+
+    /**
+     * @param array $array associative array to implode
+     * @param string $separator (optional, defaults to =)
+     * @param string $glue (optional, defaults to ', ')
+     * @return bool
+     */
+    public static function implodeAssociativeArray($array, $separator = '=', $glue = ', ')
+    {
+    }
+
+    public static function attributesToString($attributes)
+    {
+    }
+
+    /**
+     * @param array $signature
+     * @param array $attributes
+     */
+    public static function verifyKeys($signature, $attributes)
+    {
+    }
+
+    /**
+     * @param $array
+     * @param string $oldKey
+     * @param string $newKey
+     * @return array
+     */
+    public static function replaceKey($array, $oldKey, $newKey)
+    {
+    }
+
+    /**
+     * @param array $keys
+     * @param string $namespace
+     * @return array
+     */
+    private static function _flattenArray($keys, $namespace = null)
+    {
+    }
+
+    private static function _flattenUserKeys($keys, $namespace = null)
+    {
+    }
+
+    /**
+     * @param array $validKeys
+     * @param array $invalidKeys
+     * @return array
+     */
+    private static function _removeWildcardKeys($validKeys, $invalidKeys)
+    {
+    }
+}

@@ -1,0 +1,32 @@
+<?php
+
+namespace Braintree;
+
+/**
+ * @property-read string $paymentId
+ */
+class LocalPaymentReversed extends Base
+{
+    /**
+     * @return LocalPaymentReversed
+     */
+    public static function factory($attributes)
+    {
+    }
+
+
+    /**
+     * @param array $localPaymentReversedAttribs array of localPaymentReversed data
+     * @return void
+     */
+    protected function _initialize($localPaymentReversedAttribs)
+    {
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+    }
+}

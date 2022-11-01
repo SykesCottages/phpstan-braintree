@@ -1,0 +1,81 @@
+<?php
+
+namespace Braintree;
+
+/**
+ * @property-read \Braintree\Address $billingAddress
+ * @property-read string $bin
+ * @property-read string $cardType
+ * @property-read string $cardholderName
+ * @property-read string $commercial
+ * @property-read string $countryOfIssuance
+ * @property-read \DateTime $createdAt
+ * @property-read string $customerId
+ * @property-read string $customerLocation
+ * @property-read string $debit
+ * @property-read boolean $default
+ * @property-read string $durbinRegulated
+ * @property-read string $expirationDate
+ * @property-read string $expirationMonth
+ * @property-read string $expirationYear
+ * @property-read boolean $expired
+ * @property-read string $healthcare
+ * @property-read string $imageUrl
+ * @property-read string $issuingBank
+ * @property-read string $last4
+ * @property-read string $maskedNumber
+ * @property-read string $payroll
+ * @property-read string $prepaid
+ * @property-read string $productId
+ * @property-read string $sourceCardLast4
+ * @property-read \Braintree\Subscription[] $subscriptions
+ * @property-read string $token
+ * @property-read string $uniqueNumberIdentifier
+ * @property-read \DateTime $updatedAt
+ */
+class SamsungPayCard extends Base
+{
+    /**
+     * @return boolean
+     */
+    public function isDefault()
+    {
+    }
+
+    /**
+     * @return boolean
+     */
+    public function isExpired()
+    {
+    }
+
+    /**
+     * @param array $creditCardAttribs array of creditcard data
+     * @return void
+     */
+    protected function _initialize($creditCardAttribs)
+    {
+    }
+
+    /**
+     * @param object $otherSamsungPayCard customer to compare against
+     * @return boolean
+     */
+    public function isEqual($otherSamsungPayCard)
+    {
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+    }
+
+    /**
+     * @return SamsungPayCard
+     */
+    public static function factory($attributes)
+    {
+    }
+}

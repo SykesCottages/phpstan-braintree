@@ -1,0 +1,40 @@
+<?php
+
+namespace Braintree;
+
+class UsBankAccountVerificationGateway
+{
+
+    /**
+     * @param string $token unique id
+     * @return UsBankAccountVerification
+     * @throws Exception\NotFound
+     */
+    public function find($token)
+    {
+    }
+
+    public function search($query)
+    {
+    }
+
+    /**
+     * @param string $token unique id
+     * @param array $amounts amounts deposited in micro transfer
+     * @return UsBankAccountVerification
+     * @throws Exception\Unexpected
+     */
+    public function confirmMicroTransferAmounts($token, $amounts)
+    {
+    }
+
+    /**
+     * @param array $response gateway response values
+     * @return Result\Successful|Result\Error
+     * @throws Exception\Unexpected
+     */
+    private function _verifyGatewayResponse($response)
+    {
+
+    }
+}

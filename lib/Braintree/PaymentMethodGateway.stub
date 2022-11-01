@@ -1,0 +1,123 @@
+<?php
+
+namespace Braintree;
+
+use Braintree\Result\Successful;
+use InvalidArgumentException;
+
+class PaymentMethodGateway
+{
+    private $_gateway;
+    private $_config;
+    private $_http;
+
+    public function __construct($gateway)
+    {
+    }
+
+
+    public function create($attribs)
+    {
+    }
+
+    /**
+     * @return CreditCard|PayPalAccount
+     * @throws Exception\NotFound
+     */
+    public function find($token)
+    {
+    }
+
+    public function update($token, $attribs)
+    {
+    }
+
+    public function delete($token, $options = [])
+    {
+    }
+
+    public function grant($sharedPaymentMethodToken, $attribs = [])
+    {
+    }
+
+    public function revoke($sharedPaymentMethodToken)
+    {
+    }
+
+    private static function baseSignature()
+    {
+    }
+
+    public static function createSignature()
+    {
+    }
+
+    public static function updateSignature()
+    {
+    }
+
+    private static function deleteSignature()
+    {
+    }
+
+    /**
+     * @param string $subPath
+     * @param array $params
+     * @return mixed
+     */
+    public function _doCreate($subPath, $params)
+    {
+    }
+
+    public function _doGrant($subPath, $params)
+    {
+    }
+
+    public function _doRevoke($subPath, $params)
+    {
+    }
+
+    /**
+     * @param string $subPath
+     * @param array $params
+     * @return mixed
+     */
+    public function _doUpdate($subPath, $params)
+    {
+    }
+
+
+    /**
+     * @param string $subPath
+     * @return Successful
+     */
+    public function _doDelete($subPath)
+    {
+    }
+
+    /**
+     * @param array $response gateway response values
+     * @return Result\Successful|Result\Error
+     * @throws Exception\Unexpected
+     */
+    private function _verifyGatewayResponse($response)
+    {
+    }
+
+    private function _verifyGrantResponse($response)
+    {
+    }
+
+    private function _verifyRevokeResponse($response)
+    {
+    }
+
+    /**
+     * @param string $identifier
+     * @param string $identifierType type of identifier supplied, default 'token'
+     * @throws InvalidArgumentException
+     */
+    private function _validateId($identifier = null, $identifierType = 'token')
+    {
+    }
+}

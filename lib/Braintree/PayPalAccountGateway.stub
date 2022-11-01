@@ -1,0 +1,75 @@
+<?php
+
+namespace Braintree;
+
+use InvalidArgumentException;
+
+class PayPalAccountGateway
+{
+
+    /**
+     * @param string $token paypal account unique id
+     * @return PayPalAccount
+     * @throws Exception\NotFound
+     */
+    public function find($token)
+    {
+    }
+
+    /**
+     * @param array $attributes
+     * @param string $token (optional)
+     * @return Result\Successful|Result\Error
+     */
+    public function update($token, $attributes)
+    {
+    }
+
+    public function delete($token)
+    {
+    }
+
+    /**
+     * @param string $token
+     * @param array $transactionAttribs
+     * @return Result\Successful|Result\Error
+     * @see Transaction::sale()
+     */
+    public function sale($token, $transactionAttribs)
+    {
+    }
+
+    /**
+     * @return array
+     */
+    public static function updateSignature()
+    {
+    }
+
+    /**
+     * @param string $subPath
+     * @param array $params
+     * @return mixed
+     */
+    private function _doUpdate($httpVerb, $subPath, $params)
+    {
+    }
+
+    /**
+     * @param array $response gateway response values
+     * @return Result\Successful|Result\Error
+     * @throws Exception\Unexpected
+     */
+    private function _verifyGatewayResponse($response)
+    {
+    }
+
+    /**
+     * @param string $identifier
+     * @param string $identifierType type of identifier supplied, default 'token'
+     * @throws InvalidArgumentException
+     */
+    private function _validateId($identifier = null, $identifierType = 'token')
+    {
+    }
+}

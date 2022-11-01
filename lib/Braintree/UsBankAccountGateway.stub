@@ -1,0 +1,41 @@
+<?php
+
+namespace Braintree;
+
+use InvalidArgumentException;
+
+class UsBankAccountGateway
+{
+    public function __construct($gateway)
+    {
+    }
+
+
+    /**
+     * @param string $token paypal accountunique id
+     * @return UsBankAccount
+     * @throws Exception\NotFound
+     */
+    public function find($token)
+    {
+    }
+
+    /**
+     * @param string $token
+     * @param array $transactionAttribs
+     * @return Result\Successful|Result\Error
+     * @see Transaction::sale()
+     */
+    public function sale($token, $transactionAttribs)
+    {
+    }
+
+    /**
+     * @param array $response gateway response values
+     * @return Result\Successful|Result\Error
+     * @throws Exception\Unexpected
+     */
+    private function _verifyGatewayResponse($response)
+    {
+    }
+}
