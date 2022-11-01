@@ -17,6 +17,8 @@ namespace Braintree;
  */
 class PayPalAccount extends Base
 {
+
+    /**
      * @return PayPalAccount
      */
     public static function factory($attributes)
