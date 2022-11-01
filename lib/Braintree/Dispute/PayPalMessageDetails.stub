@@ -1,0 +1,14 @@
+<?php
+
+namespace Braintree\Dispute;
+
+use Braintree\Instance;
+
+/**
+ * @property-read string $message
+ * @property-read string $sender
+ * @property-read \DateTime $sentAt
+ */
+class PayPalMessageDetails extends Instance
+{
+}

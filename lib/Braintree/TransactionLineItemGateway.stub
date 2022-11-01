@@ -1,0 +1,24 @@
+<?php
+
+namespace Braintree;
+
+use InvalidArgumentException;
+
+class TransactionLineItemGateway
+{
+    /**
+     * @param string id
+     * @return Transaction
+     */
+    public function findAll($id)
+    {
+    }
+
+    /**
+     * @param string $id
+     * @throws InvalidArgumentException
+     */
+    private function _validateId($id = null)
+    {
+    }
+}

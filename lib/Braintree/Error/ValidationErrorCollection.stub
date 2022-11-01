@@ -1,0 +1,13 @@
+<?php
+
+namespace Braintree\Error;
+
+use Braintree\Collection;
+
+/**
+ * @property-read array $errors
+ * @property-read array $nested
+ */
+class ValidationErrorCollection extends Collection
+{
+}

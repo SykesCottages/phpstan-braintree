@@ -1,0 +1,13 @@
+<?php
+
+namespace Braintree;
+
+class Version
+{
+    /**
+     * @return string the current library version
+     */
+    public static function get()
+    {
+    }
+}

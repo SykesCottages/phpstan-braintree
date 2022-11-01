@@ -1,0 +1,91 @@
+<?php
+
+namespace Braintree;
+
+class SubscriptionSearch
+{
+    /**
+     * @return RangeNode
+     */
+    public static function billingCyclesRemaining()
+    {
+    }
+
+    /**
+     * @return RangeNode
+     */
+    public static function daysPastDue()
+    {
+        return new RangeNode('days_past_due');
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function id()
+    {
+    }
+
+    /**
+     * @return MultipleValueNode
+     */
+    public static function inTrialPeriod()
+    {
+    }
+
+    /**
+     * @return MultipleValueNode
+     */
+    public static function merchantAccountId()
+    {
+    }
+
+    /**
+     * @return RangeNode
+     */
+    public static function nextBillingDate()
+    {
+    }
+
+    /**
+     * @return MultipleValueOrTextNode
+     */
+    public static function planId()
+    {
+    }
+
+    /**
+     * @return RangeNode
+     */
+    public static function price()
+    {
+    }
+
+    /**
+     * @return MultipleValueNode
+     */
+    public static function status()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function transactionId()
+    {
+    }
+
+    /**
+     * @return MultipleValueNode
+     */
+    public static function ids()
+    {
+    }
+
+    /**
+     * @return RangeNode
+     */
+    public static function createdAt()
+    {
+    }
+}

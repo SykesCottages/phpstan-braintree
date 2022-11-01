@@ -1,0 +1,58 @@
+<?php
+
+namespace Braintree;
+
+abstract class Instance
+{
+    /**
+     * @param array $attributes
+     */
+    public function __construct($attributes)
+    {
+    }
+
+    /**
+     * @param string $name property name
+     * @return mixed contents of instance properties
+     */
+    public function __get($name)
+    {
+    }
+
+    /**
+     * @param string $name property name
+     * @return boolean
+     */
+    public function __isset($name)
+    {
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+    }
+    /**
+     * @access protected
+     * @param array $attributes array of properties to set - single level
+     * @return void
+     */
+    private function _initializeFromArray($attributes)
+    {
+    }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize()
+    {
+    }
+
+    /**
+     * @return array
+     */
+    public function toArray()
+    {
+    }
+}

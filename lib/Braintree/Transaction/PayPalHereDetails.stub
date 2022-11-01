@@ -1,0 +1,22 @@
+<?php
+
+namespace Braintree\Transaction;
+
+use Braintree\Instance;
+
+/**
+ * @property-read string $authorizationId
+ * @property-read string $captureId
+ * @property-read string $invoiceId
+ * @property-read string $last4
+ * @property-read string $paymentId
+ * @property-read string $payment_type
+ * @property-read string $refundId
+ * @property-read string $transactionFeeAmount
+ * @property-read string $transactionFeeCurrencyIsoCode
+ * @property-read string $transactionInitiationDate
+ * @property-read string $transactionUpdatedDate
+ */
+class PayPalHereDetails extends Instance
+{
+}

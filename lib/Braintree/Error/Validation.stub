@@ -1,0 +1,28 @@
+<?php
+
+namespace Braintree\Error;
+
+use Braintree\Util;
+
+/**
+ * @property-read string $attribute
+ * @property-read string $code
+ * @property-read string $message
+ */
+class Validation
+{
+    /**
+     * @param array $attributes
+     */
+    public function __construct($attributes)
+    {
+    }
+    
+    /**
+     * @param array $attributes array of properties to set - single level
+     * @return void
+     */
+    private function _initializeFromArray($attributes)
+    {
+    }
+}

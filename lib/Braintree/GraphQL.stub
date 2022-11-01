@@ -1,0 +1,23 @@
+<?php
+
+namespace Braintree;
+
+class GraphQL extends Http
+{
+    /**
+     * @return string[]
+     */
+    public function graphQLHeaders()
+    {
+    }
+
+    /**
+     * @param $definition
+     * @param $variables
+     * @return array
+     * @throws Exception
+     */
+    public function request($definition, $variables = null)
+    {
+    }
+}

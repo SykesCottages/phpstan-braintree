@@ -1,0 +1,35 @@
+<?php
+
+namespace Braintree;
+
+
+/**
+ * @property-read string $paymentId
+ * @property-read string $payerId
+ * @property-read string $paymentMethodNonce
+ * @property-read \Braintree\Transaction $transaction
+ */
+class LocalPaymentCompleted extends Base
+{
+    /**
+     * @return LocalPaymentCompleted
+     */
+    public static function factory($attributes)
+    {
+    }
+
+    /**
+     * @param array $localPaymentCompletedAttribs array of localPaymentCompleted data
+     * @return void
+     */
+    protected function _initialize($localPaymentCompletedAttribs)
+    {
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+    }
+}

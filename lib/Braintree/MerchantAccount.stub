@@ -1,0 +1,40 @@
+<?php
+
+namespace Braintree;
+
+/**
+ * @property-read \Braintree\MerchantAccount\BusinessDetails $businessDetails
+ * @property-read string $currencyIsoCode
+ * @property-read boolean $default
+ * @property-read \Braintree\MerchantAccount\FundingDetails $fundingDetails
+ * @property-read string $id
+ * @property-read \Braintree\MerchantAccount\IndividualDetails $individualDetails
+ * @property-read \Braintree\MerchantAccount $masterMerchantAccount
+ * @property-read string $status
+ */
+class MerchantAccount extends Base
+{
+    /**
+     * @param $attributes
+     * @return MerchantAccount
+     */
+    public static function factory($attributes)
+    {
+    }
+
+    protected function _initialize($merchantAccountAttribs)
+    {
+    }
+
+    public static function create($attribs)
+    {
+    }
+
+    public static function find($merchant_account_id)
+    {
+    }
+
+    public static function update($merchant_account_id, $attributes)
+    {
+    }
+}

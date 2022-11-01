@@ -1,0 +1,46 @@
+<?php
+
+namespace Braintree\Result;
+
+use Braintree\Base;
+use Braintree\Transaction;
+use Braintree\Subscription;
+use Braintree\MerchantAccount;
+use Braintree\Util;
+use Braintree\Error\ErrorCollection;
+
+/**
+ * @property-read array $params original passed params
+ * @property-read \Braintree\Error\ErrorCollection $errors
+ * @property-read \Braintree\Result\CreditCardVerification $creditCardVerification credit card verification data
+ */
+class Error extends Base
+{
+    /**
+    * @var bool always false
+    */
+    public $success = false;
+
+    /**
+     * @param string $field
+     * @return string
+     */
+    public function valueForHtmlField($field)
+    {
+    }
+
+   /**
+    * overrides default constructor
+    * @param array $response gateway response array
+    */
+    public function __construct($response)
+    {
+    }
+
+   /**
+     * @return string
+     */
+    public function __toString()
+    {
+    }
+}

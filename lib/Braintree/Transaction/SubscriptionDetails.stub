@@ -1,0 +1,13 @@
+<?php
+
+namespace Braintree\Transaction;
+
+use Braintree\Instance;
+
+/**
+ * @property-read string $billingPeriodStartDate
+ * @property-read string $billingPeriodEndDate
+ */
+class SubscriptionDetails extends Instance
+{
+}

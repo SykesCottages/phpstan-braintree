@@ -1,16 +1,99 @@
 parameters:
     stubFiles:
         - lib/Braintree/AccountUpdaterDailyReport.stub
-        - lib/Braintree/AuthorizationAdjustment.stub
-        - lib/Braintree/Address.stub
         - lib/Braintree/AchMandate.stub
-        - lib/Braintree/ClientTokenGateway.stub
+        - lib/Braintree/AddOn.stub
         - lib/Braintree/AddOnGateway.stub
-        - lib/Braintree/Collection.stub
-        - lib/Braintree/ApplePayOptions.stub
+        - lib/Braintree/Address.stub
         - lib/Braintree/AddressGateway.stub
+        - lib/Braintree/ApplePayCard.stub
         - lib/Braintree/ApplePayGateway.stub
+        - lib/Braintree/ApplePayOptions.stub
+        - lib/Braintree/AuthorizationAdjustment.stub
         - lib/Braintree/BinData.stub
         - lib/Braintree/ClientToken.stub
-        - lib/Braintree/AddOn.stub
+        - lib/Braintree/ClientTokenGateway.stub
+        - lib/Braintree/Collection.stub
+        - lib/Braintree/Configuration.stub
+        - lib/Braintree/ConnectedMerchantPayPalStatusChanged.stub
+        - lib/Braintree/ConnectedMerchantStatusTransitioned.stub
         - lib/Braintree/CreditCard.stub
+        - lib/Braintree/CreditCardGateway.stub
+        - lib/Braintree/CreditCardVerification.stub
+        - lib/Braintree/Customer.stub
+        - lib/Braintree/CustomerGateway.stub
+        - lib/Braintree/Descriptor.stub
+        - lib/Braintree/DisbursementDetails.stub
+        - lib/Braintree/Discount.stub
+        - lib/Braintree/Dispute.stub
+        - lib/Braintree/Dispute/EvidenceDetails.stub
+        - lib/Braintree/Dispute/PayPalMessageDetails.stub
+        - lib/Braintree/Dispute/StatusHistoryDetails.stub
+        - lib/Braintree/Dispute/TransactionDetails.stub
+        - lib/Braintree/DisputeGateway.stub
+        - lib/Braintree/DocumentUpload.stub
+        - lib/Braintree/DocumentUploadGateway.stub
+        - lib/Braintree/EndsWithNode.stub
+        - lib/Braintree/EqualityNode.stub
+        - lib/Braintree/Error/ErrorCollection.stub
+        - lib/Braintree/Error/Validation.stub
+        - lib/Braintree/Error/ValidationErrorCollection.stub
+        - lib/Braintree/FacilitatedDetails.stub
+        - lib/Braintree/FacilitatorDetails.stub
+        - lib/Braintree/Gateway.stub
+        - lib/Braintree/GooglePayCard.stub
+        - lib/Braintree/GrantedPaymentInstrumentUpdate.stub
+        - lib/Braintree/GraphQL.stub
+        - lib/Braintree/Instance.stub
+        - lib/Braintree/LocalPaymentCompleted.stub
+        - lib/Braintree/LocalPaymentExpired.stub
+        - lib/Braintree/LocalPaymentFunded.stub
+        - lib/Braintree/LocalPaymentReversed.stub
+        - lib/Braintree/MerchantAccount.stub
+        - lib/Braintree/PayPalAccount.stub
+        - lib/Braintree/PayPalAccountGateway.stub
+        - lib/Braintree/PaymentMethodGateway.stub
+        - lib/Braintree/PaymentMethodNonce.stub
+        - lib/Braintree/Plan.stub
+        - lib/Braintree/Result/CreditCardVerification.stub
+        - lib/Braintree/Result/UsBankAccountVerification.stub
+        - lib/Braintree/RevokedPaymentMethodMetadata.stub
+        - lib/Braintree/RiskData.stub
+        - lib/Braintree/SamsungPayCard.stub
+        - lib/Braintree/SettlementBatchSummary.stub
+        - lib/Braintree/SettlementBatchSummaryGateway.stub
+        - lib/Braintree/Subscription.stub
+        - lib/Braintree/Subscription/StatusDetails.stub
+        - lib/Braintree/SubscriptionSearch.stub
+        - lib/Braintree/ThreeDSecureInfo.stub
+        - lib/Braintree/Transaction.stub
+        - lib/Braintree/Transaction/AddressDetails.stub
+        - lib/Braintree/Transaction/ApplePayCardDetails.stub
+        - lib/Braintree/Transaction/CreditCardDetails.stub
+        - lib/Braintree/Transaction/CustomerDetails.stub
+        - lib/Braintree/Transaction/GooglePayCardDetails.stub
+        - lib/Braintree/Transaction/LocalPaymentDetails.stub
+        - lib/Braintree/Transaction/PayPalDetails.stub
+        - lib/Braintree/Transaction/PayPalHereDetails.stub
+        - lib/Braintree/Transaction/SamsungPayCardDetails.stub
+        - lib/Braintree/Transaction/StatusDetails.stub
+        - lib/Braintree/Transaction/SubscriptionDetails.stub
+        - lib/Braintree/Transaction/UsBankAccountDetails.stub
+        - lib/Braintree/Transaction/VenmoAccountDetails.stub
+        - lib/Braintree/TransactionGateway.stub
+        - lib/Braintree/TransactionLineItem.stub
+        - lib/Braintree/TransactionLineItemGateway.stub
+        - lib/Braintree/TransactionSearch.stub
+        - lib/Braintree/UnknownPaymentMethod.stub
+        - lib/Braintree/UsBankAccount.stub
+        - lib/Braintree/UsBankAccountGateway.stub
+        - lib/Braintree/UsBankAccountVerification.stub
+        - lib/Braintree/UsBankAccountVerificationGateway.stub
+        - lib/Braintree/UsBankAccountVerificationSearch.stub
+        - lib/Braintree/Util.stub
+        - lib/Braintree/VenmoAccount.stub
+        - lib/Braintree/Version.stub
+        - lib/Braintree/VisaCheckoutCard.stub
+        - lib/Braintree/Xml.stub
+        - lib/Braintree/Xml/Generator.stub
+        - lib/Braintree/Xml/Parser.stub

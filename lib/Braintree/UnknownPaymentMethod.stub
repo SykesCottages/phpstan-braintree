@@ -1,0 +1,34 @@
+<?php
+
+namespace Braintree;
+
+/**
+ * @property-read string $token
+ * @property-read string $imageUrl
+ */
+class UnknownPaymentMethod extends Base
+{
+    /**
+     * @return UnknownPaymentMethod
+     */
+    public static function factory($attributes)
+    {
+    }
+
+    /**
+     * @return boolean
+     */
+    public function isDefault()
+    {
+    }
+
+    /**
+     * @access protected
+     * @param array $unknownPaymentMethodAttribs array of unknownPaymentMethod data
+     * @return void
+     */
+    protected function _initialize($unknownPaymentMethodAttribs)
+    {
+        
+    }
+}

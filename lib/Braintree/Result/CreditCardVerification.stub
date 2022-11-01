@@ -1,0 +1,39 @@
+<?php
+
+namespace Braintree\Result;
+
+use Braintree\RiskData;
+use Braintree\ThreeDSecureInfo;
+use Braintree\Util;
+use Braintree\Base;
+
+/**
+ * @property-read string|null $avsErrorResponseCode
+ * @property-read string $avsPostalCodeResponseCode
+ * @property-read string $avsStreetAddressResponseCode
+ * @property-read string $cvvResponseCode
+ * @property-read string $status
+ *
+ */
+class CreditCardVerification extends Base
+{
+    /**
+     * @param array $aAttribs array of properties to set - single level
+     * @return void
+     */
+    private function _initializeFromArray($attributes)
+    {
+    }
+
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+    }
+
+    public static function allStatuses()
+    {
+    }
+}

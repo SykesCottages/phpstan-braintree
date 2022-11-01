@@ -1,0 +1,90 @@
+<?php
+
+namespace Braintree;
+
+class UsBankAccountVerificationSearch
+{
+    /**
+     * @return TextNode
+     */
+    public static function accountHolderName()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function customerEmail()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function customerId()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function id()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function paymentMethodToken()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function routingNumber()
+    {
+    }
+
+    /**
+     * @return MultipleValueNode
+     */
+    public static function ids()
+    {
+    }
+
+    /**
+     * @return MultipleValueNode
+     */
+    public static function status()
+    {
+    }
+
+    /**
+     * @return MultipleValueNode
+     */
+    public static function verificationMethod()
+    {
+    }
+
+    /**
+     * @return RangeNode
+     */
+    public static function createdAt()
+    {
+    }
+
+    /**
+     * @return EqualityNode
+     */
+    public static function accountType()
+    {
+    }
+
+    /**
+     * @return EndsWithNode
+     */
+    public static function accountNumber()
+    {
+    }
+}

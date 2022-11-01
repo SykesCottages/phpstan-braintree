@@ -1,0 +1,194 @@
+<?php
+
+namespace Braintree;
+
+use InvalidArgumentException;
+
+class TransactionGateway
+{
+
+    public function __construct($gateway)
+    {
+    }
+
+    public function cloneTransaction($transactionId, $attribs)
+    {
+    }
+
+    /**
+     * @param array $attribs
+     * @return Result\Successful|Result\Error
+     */
+    private function create($attribs)
+    {
+    }
+
+    /**
+     * @param array $attribs
+     * @return object
+     * @throws Exception\ValidationError
+     */
+    private function createNoValidate($attribs)
+    {
+    }
+
+    public static function cloneSignature()
+    {
+    }
+
+    /**
+     * @return array gateway request signature format
+     */
+    public static function createSignature()
+    {
+    }
+
+    public static function submitForSettlementSignature()
+    {
+    }
+
+    public static function updateDetailsSignature()
+    {
+        return ['amount', 'orderId', ['descriptor' => ['name', 'phone', 'url']]];
+    }
+
+    public static function refundSignature()
+    {
+    }
+
+    /**
+     * @param array $attribs
+     * @return Result\Successful|Result\Error
+     */
+    public function credit($attribs)
+    {
+    }
+
+    /**
+     * @param array $attribs
+     * @return Result\Successful|Result\Error
+     * @throws Exception\ValidationError
+     */
+    public function creditNoValidate($attribs)
+    {
+    }
+
+    /**
+     * @param string id
+     * @return Transaction
+     */
+    public function find($id)
+    {
+    }
+    
+    /**
+     * @param array $attribs (Note: $recurring param is deprecated. Use $transactionSource instead)
+     * @return Result\Successful|Result\Error
+     */
+    public function sale($attribs)
+    {
+    }
+
+    /**
+     * @param array $attribs
+     * @return array
+     * @throws Exception\ValidationsFailed
+     */
+    public function saleNoValidate($attribs)
+    {
+    }
+
+    /**
+     * @param mixed $query search query
+     * @param array $options options such as page number
+     * @return ResourceCollection
+     * @throws InvalidArgumentException
+     */
+    public function search($query)
+    {
+    }
+
+    public function fetch($query, $ids)
+    {
+    }
+
+    /**
+     * @param string $transactionId
+     * @param string amount
+     * @return Result\Successful|Result\Error
+     * @throws Exception\Unexpected
+     */
+    public function adjustAuthorization($transactionId, $amount)
+    {
+    }
+
+    /**
+     * @param string $id transaction id
+     * @return Result\Successful|Result\Error
+     */
+    public function void($transactionId)
+    {
+    }
+    
+    public function voidNoValidate($transactionId)
+    {
+    }
+
+    public function submitForSettlement($transactionId, $amount = null, $attribs = [])
+    {
+    }
+
+    public function submitForSettlementNoValidate($transactionId, $amount = null, $attribs = [])
+    {
+    }
+
+    public function updateDetails($transactionId, $attribs = [])
+    {
+    }
+
+    public function submitForPartialSettlement($transactionId, $amount, $attribs = [])
+    {
+    }
+
+    public function holdInEscrow($transactionId)
+    {
+    }
+
+    public function releaseFromEscrow($transactionId)
+    {
+    }
+
+    public function cancelRelease($transactionId)
+    {
+    }
+
+    public function refund($transactionId, $amount_or_options = null)
+    {
+    }
+
+    /**
+     * @param string $subPath
+     * @param array $params
+     * @return Result\Successful|Result\Error
+     */
+    public function _doCreate($subPath, $params)
+    {
+    }
+
+    /**
+     * @param string $id
+     * @throws InvalidArgumentException
+     */
+    private function _validateId($id = null)
+    {
+    }
+
+    /**
+     * @param array $response gateway response values
+     * @return Result\Successful|Result\Error
+     * @throws Exception\Unexpected
+     */
+    private function _verifyGatewayResponse($response)
+    {
+    }
+}

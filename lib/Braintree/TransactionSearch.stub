@@ -1,0 +1,452 @@
+<?php
+
+namespace Braintree;
+
+class TransactionSearch
+{
+    /**
+     * @return RangeNode
+     */
+    public static function amount()
+    {
+    }
+
+    /**
+     * @return RangeNode
+     */
+    public static function authorizationExpiredAt()
+    {
+    }
+
+    /**
+     * @return RangeNode
+     */
+    public static function authorizedAt()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function billingCompany()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function billingCountryName()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function billingExtendedAddress()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function billingFirstName()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function billingLastName()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function billingLocality()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function billingPostalCode()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function billingRegion()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function billingStreetAddress()
+    {
+    }
+
+    /**
+     * @return RangeNode
+     */
+    public static function createdAt()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function creditCardCardholderName()
+    {
+    }
+
+    /**
+     * @return EqualityNode
+     */
+    public static function creditCardExpirationDate()
+    {
+    }
+
+    /**
+     * @return PartialMatchNode
+     */
+    public static function creditCardNumber()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function creditCardUniqueIdentifier()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function currency()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+
+    public static function customerCompany()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function customerEmail()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function customerFax()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function customerFirstName()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function customerId()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function customerLastName()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function customerPhone()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function customerWebsite()
+    {
+    }
+
+    /**
+     * @return RangeNode
+     */
+    public static function disbursementDate()
+    {
+    }
+
+    /**
+     * @return RangeNode
+     */
+    public static function disputeDate()
+    {
+    }
+    public static function failedAt()
+    {
+        return new RangeNode("failedAt");
+    }
+
+    /**
+     * @return RangeNode
+     */
+    public static function gatewayRejectedAt()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function id()
+    {
+    }
+
+    /**
+     * @return MultipleValueNode
+     */
+    public static function ids()
+    {
+    }
+
+    /**
+     * @return MultipleValueNode
+     */
+    public static function merchantAccountId()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function orderId()
+    {
+    }
+
+    /**
+     * @return MultipleValueNode
+     */
+    public static function paymentInstrumentType()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function paymentMethodToken()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function paypalAuthorizationId()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function paypalPayerEmail()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function paypalPaymentId()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function processorAuthorizationCode()
+    {
+    }
+
+    /**
+     * @return RangeNode
+     */
+    public static function processorDeclinedAt()
+    {
+    }
+
+    /**
+     * @return KeyValueNode
+     */
+    public static function refund()
+    {
+    }
+
+    /**
+     * @return RangeNode
+     */
+    public static function settledAt()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function settlementBatchId()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function shippingCompany()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function shippingCountryName()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function shippingExtendedAddress()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function shippingFirstName()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function shippingLastName()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function shippingLocality()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function shippingPostalCode()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function shippingRegion()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function shippingStreetAddress()
+    {
+    }
+
+    /**
+     * @return RangeNode
+     */
+    public static function submittedForSettlementAt()
+    {
+    }
+
+    /**
+     * @return TextNode
+     */
+    public static function storeId()
+    {
+    }
+
+    /**
+     * @return MultipleValueNode
+     */
+    public static function storeIds()
+    {
+    }
+
+    /**
+     * @return MultipleValueNode
+     */
+    public static function user()
+    {
+    }
+
+    /**
+     * @return RangeNode
+     */
+    public static function voidedAt()
+    {
+    }
+
+    /**
+     * @return MultipleValueNode
+     */
+    public static function createdUsing()
+    {
+    }
+
+    /**
+     * @return MultipleValueNode
+     */
+    public static function creditCardCardType()
+    {
+    }
+
+    /**
+     * @return MultipleValueNode
+     */
+    public static function creditCardCustomerLocation()
+    {
+    }
+
+    /**
+     * @return MultipleValueNode
+     */
+    public static function source()
+    {
+    }
+
+    /**
+     * @return MultipleValueNode
+     */
+    public static function status()
+    {
+    }
+
+    /**
+     * @return MultipleValueNode
+     */
+    public static function type()
+    {
+    }
+}

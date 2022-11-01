@@ -1,0 +1,35 @@
+<?php
+
+namespace Braintree;
+
+/**
+ * @property-read string $grantOwnerMerchantId
+ * @property-read string $grantRecipientMerchantId
+ * @property-read string $paymentMethodNonce
+ * @property-read string $token
+ * @property-read string $updatedFields
+ */
+class GrantedPaymentInstrumentUpdate extends Base
+{
+    /**
+     * @return GrantedPaymentInstrumentUpdate
+     */
+    public static function factory($attributes)
+    {
+    }
+
+    /**
+     * @param $grantedPaymentInstrumentUpdateAttribs
+     * @return void
+     */
+    protected function _initialize($grantedPaymentInstrumentUpdateAttribs)
+    {
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+    }
+}

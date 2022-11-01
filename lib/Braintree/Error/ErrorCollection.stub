@@ -1,0 +1,53 @@
+<?php
+
+namespace Braintree\Error;
+
+use Braintree\Util;
+use Countable;
+use JsonSerializable;
+
+/**
+ * @property-read object $errors
+ */
+class ErrorCollection implements Countable, JsonSerializable
+{
+
+    /**
+     * @return integer
+     */
+    public function count()
+    {
+    }
+
+    /**
+     * @return int size
+     */
+    public function deepSize()
+    {
+    }
+
+    /**
+     * return errors for the passed key name
+     *
+     * @param string $key
+     * @return mixed
+     */
+    public function forKey($key)
+    {
+    }
+
+    /**
+     * @param string $field
+     * @return array
+     */
+    public function onHtmlField($field)
+    {
+    }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize()
+    {
+    }
+}

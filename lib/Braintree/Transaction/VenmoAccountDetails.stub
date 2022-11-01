@@ -1,0 +1,17 @@
+<?php
+
+namespace Braintree\Transaction;
+
+use Braintree\Instance;
+
+/**
+ * @property-read string $sourceDescription
+ * @property-read string $token
+ * @property-read string $imageUrl
+ * @property-read string $username
+ * @property-read string $venmo_user_id
+ * @uses Instance inherits methods
+ */
+class VenmoAccountDetails extends Instance
+{
+}

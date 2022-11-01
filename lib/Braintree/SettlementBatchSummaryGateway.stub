@@ -1,0 +1,54 @@
+<?php
+
+namespace Braintree;
+
+class SettlementBatchSummaryGateway
+{
+    /**
+     * @var Gateway
+     */
+    private $_gateway;
+
+    /**
+     * @var Configuration
+     */
+    private $_config;
+
+    /**
+     * @var Http
+     */
+    private $_http;
+
+    /**
+     * @param Gateway $gateway
+     */
+    public function __construct($gateway)
+    {
+    }
+
+    /**
+     * @param string $settlement_date
+     * @param string $groupByCustomField
+     * @return SettlementBatchSummary|Result\Error
+     */
+    public function generate($settlement_date, $groupByCustomField = null)
+    {
+    }
+
+    /**
+     * @param string $groupByCustomField
+     * @param array $records
+     * @return array
+    */
+    private function _underscoreCustomField($groupByCustomField, $records)
+    {
+    }
+
+    /**
+     * @return Result\Successful|Result\Error
+     * @throws Exception\Unexpected
+     */
+    private function _verifyGatewayResponse($response)
+    {
+    }
+}

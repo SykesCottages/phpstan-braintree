@@ -1,0 +1,20 @@
+<?php
+
+namespace Braintree\Transaction;
+
+use Braintree\Instance;
+
+/**
+ * @property-read string $firstName
+ * @property-read string $lastName
+ * @property-read string $company
+ * @property-read string $streetAddress
+ * @property-read string $extendedAddress
+ * @property-read string $locality
+ * @property-read string $region
+ * @property-read string $postalCode
+ * @property-read string $countryName
+ */
+class AddressDetails extends Instance
+{
+}

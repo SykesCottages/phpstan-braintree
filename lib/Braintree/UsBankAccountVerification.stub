@@ -1,0 +1,52 @@
+<?php
+
+namespace Braintree;
+
+class UsBankAccountVerification extends Result\UsBankAccountVerification
+{
+    /**
+     * @return UsBankAccountVerification
+     */
+    public static function factory($attributes)
+    {
+    }
+
+    /**
+     * @param array $usBankAccountVerificationAttribs array of usBankAccountVerification data
+     * @return void
+     */
+    protected function _initialize($usBankAccountVerificationAttribs)
+    {
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+    }
+
+    /**
+     * @param string $token unique id
+     * @return UsBankAccountVerification
+     */
+    public static function find($token)
+    {
+    }
+
+    /**
+     * @return ResourceCollection
+     */
+    public static function search($query)
+    {
+    }
+
+    /**
+     * @param string $token unique id
+     * @param array $amounts micro transfer amounts
+     * @return ResourceCollection
+     */
+    public static function confirmMicroTransferAmounts($token, $amounts)
+    {
+    }
+}

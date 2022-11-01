@@ -1,0 +1,32 @@
+<?php
+
+namespace Braintree;
+
+/**
+ * @property-read string $paymentId
+ * @property-read string $paymentContextId
+ */
+class LocalPaymentExpired extends Base
+{
+    /**
+     * @return LocalPaymentExpired
+     */
+    public static function factory($attributes)
+    {
+    }
+
+    /**
+     * @param array $localPaymentExpiredAttribs array of localPaymentExpired data
+     * @return void
+     */
+    protected function _initialize($localPaymentExpiredAttribs)
+    {
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+    }
+}
