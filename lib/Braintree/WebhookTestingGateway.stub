@@ -1,0 +1,25 @@
+<?php
+
+namespace Braintree;
+
+/**
+ * WebhookTestingGateway module
+ * Creates and manages test webhooks
+ */
+class WebhookTestingGateway
+{
+    public function __construct(Gateway $gateway)
+    {
+    }
+
+    /**
+     * @param string $kind
+     * @param string $id
+     * @param string $sourceMerchantId
+     *
+     * @return array{bt_signature:string,bt_payload:string}
+     */
+    public function sampleNotification($kind, $id, $sourceMerchantId = null)
+    {
+    }
+}

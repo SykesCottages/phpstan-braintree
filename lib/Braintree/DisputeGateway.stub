@@ -59,7 +59,7 @@ class DisputeGateway
     /**
      * @param string $id
      * @throws NotFound
-     * @return  Successful|Result\Error
+     * @return Dispute
      */
     public function find($id)
     {

@@ -30,6 +30,14 @@ class ClientTokenGateway
     }
 
     /**
+     * @param array $params
+     * @return string
+     */
+    public function generate($params = [])
+    {
+    }
+
+    /**
      * @ignore
      * @param var $subPath
      * @param array $params
