@@ -50,6 +50,7 @@ parameters:
         - lib/Braintree/LocalPaymentFunded.stub
         - lib/Braintree/LocalPaymentReversed.stub
         - lib/Braintree/MerchantAccount.stub
+        - lib/Braintree/MultipleValueNode.stub
         - lib/Braintree/PayPalAccount.stub
         - lib/Braintree/PayPalAccountGateway.stub
         - lib/Braintree/PaymentMethodGateway.stub
@@ -94,6 +95,7 @@ parameters:
         - lib/Braintree/VenmoAccount.stub
         - lib/Braintree/Version.stub
         - lib/Braintree/VisaCheckoutCard.stub
+        - lib/Braintree/WebhookTestingGateway.stub
         - lib/Braintree/Xml.stub
         - lib/Braintree/Xml/Generator.stub
         - lib/Braintree/Xml/Parser.stub

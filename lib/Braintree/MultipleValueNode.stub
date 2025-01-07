@@ -1,0 +1,34 @@
+<?php
+
+namespace Braintree;
+
+class MultipleValueNode
+{
+    public string $name;
+    public array $items;
+    public array $allowedValues;
+
+    /**
+     * @param array $values
+     * @throws InvalidArgumentException
+     * @return static
+     */
+    public function in($values)
+    {
+    }
+
+    /**
+     * @param mixed $value
+     * @return static
+     */
+    public function is($value)
+    {
+    }
+
+    /**
+     * @return array
+     */
+    public function toParam()
+    {
+    }
+}
